@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dietitian_Analyse">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/analyse_black"></ImageView>
+
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="Analyse"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="Analyse feeding regime"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Choose quantity of product(s) in your regime : "
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/decrement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="decrement"
+                    android:text="-"
+                    android:visibility="invisible"></Button>
+
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="1"
+                    android:textSize="50dp"></TextView>
+
+                <Button
+                    android:id="@+id/increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="increment"
+                    android:text="+"
+                    android:visibility="visible"></Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/spinnerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product1A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p1amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p1amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p1freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spinnerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product2A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p2amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p2amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p2freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="20sp"></TextView>
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product2B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p3amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p3amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p3freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spinnerC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product3A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p4amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p4amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p4freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="20sp"></TextView>
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product3B"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p5amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p5amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p5freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="20sp"></TextView>
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/product3C"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border"
+                        android:padding="15dp"
+                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/layout_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p6amountEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:id="@+id/p6amountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Amount/Feed"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/p6freqEt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/pick_background"
+                                android:hint="Enter value here"
+                                android:inputType="number"
+                                android:padding="5dp"></EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp"
+                                android:text="Frequency/Day"
+                                android:textSize="20sp"></TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--            *******************************************************************************NUTRIENT-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Nutrient "-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"></TextView>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/decrementNutrient"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:onClick="decrementNutrient"-->
+<!--                    android:text="-"-->
+<!--                    android:visibility="invisible"></Button>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/valueNutrient"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="1"-->
+<!--                    android:textSize="50dp"></TextView>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/incrementNutrient"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:onClick="incrementNutrient"-->
+<!--                    android:text="+"></Button>-->
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/spinner1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="visible">-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient1A"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/spinner2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="invisible">-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient2A"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="+"-->
+<!--                        android:textSize="20sp"></TextView>-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient2B"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/spinner3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="invisible">-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient3A"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="+"-->
+<!--                        android:textSize="20sp"></TextView>-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient3B"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="+"-->
+<!--                        android:textSize="20sp"></TextView>-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/nutrient3C"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/layout_border"-->
+<!--                        android:padding="15dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck"></com.toptoche.searchablespinnerlibrary.SearchableSpinner>-->
+<!--                </LinearLayout>-->
+<!--            </RelativeLayout>-->
+
+            <Button
+                android:id="@+id/btn_resultanalyse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gradient"
+                android:text="View result"
+                android:textColor="@color/white"></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Result"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Regime"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@color/teal_700"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/regime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/regimeA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/regimeB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/regimeC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Nutrient Analysis"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@color/teal_700"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/analysis2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/energy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="Energy = "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/protein"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="Protein = "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/fat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="Fat = "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/carbohydrate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="Carbohydrate = "
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/view_nutrient1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/view_nutrient2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/view_nutrient3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Product Usage"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@color/teal_700"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/usage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/view_usage1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/view_usage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/view_usage3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"></TextView>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

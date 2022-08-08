@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dietitian_ViewProduct">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/listview"></ImageView>
+
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="View"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="View product details"
+            android:textColor="@color/black"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@id/mid"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Spiritual Teachers List"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:textColor="@color/black" />-->
+        <ProgressBar
+            android:id="@+id/myDataLoaderProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:visibility="gone" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</RelativeLayout>

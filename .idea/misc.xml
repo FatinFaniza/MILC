@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/add.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/add_product.xml" value="0.175" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/analyse_black.xml" value="0.302734375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/compare_black.xml" value="0.302734375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/gradient.xml" value="0.2851851851851852" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable-v24/layout_border.xml" value="0.21640625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/add_photo.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/analyse.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/arrowright.xml" value="0.175390625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/background_1.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/compare.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/edittext_background.xml" value="0.152734375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/gradient2.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/home.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/hospital.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/listview.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/logout_white.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/note.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/notification.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/person_black.xml" value="0.152734375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/pick_background.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/profile.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/rounded_corner.xml" value="0.218359375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/save.xml" value="0.2515" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/search_white.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/drawable/topheader.xml" value="0.2866666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_add_note.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_add_product.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_add_product_nutrient.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_company_view_product.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_crud.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_crudactivity.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dashboard.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_detail.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_details.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_adult_formula.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_analyse.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_calco.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_carborie.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_ceprolac.xml" value="0.31097560975609756" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_compare.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_diabetasol.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_ensure_gold.xml" value="0.25636363636363635" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_glucerna.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_gucil.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_home.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_mctoil.xml" value="0.31016278046634405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_modular.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_nepro_hp.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_note.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_paediatric.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_peptamen.xml" value="0.17916525279945708" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_prosure.xml" value="0.27054545454545453" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_protegen.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_resource.xml" value="0.5" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_techno.xml" value="0.31016278046634405" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_view.xml" value="0.24785223367697595" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_view_product.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_dietitian_view_product_detail.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_forgot_password.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_login.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_main2.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_new_detail.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_new_items.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_new_upload.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_note_editor.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_note_fragment2.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_note_fragment3.xml" value="0.280078125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_note_list.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_product.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_product_edit.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_profile_edit_dietitian.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_profile_fragment2.xml" value="0.213671875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_profile_fragment3.xml" value="0.22421875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_register_dietitian.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_register_supplier.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_register_user.xml" value="0.195703125" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_supplier_home.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/activity_user_home.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/content_new_upload.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/content_new_upload2.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/custom_notes_row.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/detail_content.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/expand_list_group_category.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/expand_list_item_category.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_first.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_first2.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_first3.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_home2.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_home3.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note2.xml" value="0.19230769230769232" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note3.xml" value="0.12" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_editor.xml" value="0.204296875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_editor2.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_editor3.xml" value="0.221875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_view.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_view2.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_note_view3.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_notification.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_profile2.xml" value="0.22421875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/fragment_profile3.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/model.xml" value="0.176" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/notes_layout.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/product_detail.xml" value="0.165625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/product_detail_company.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/quick_search.xml" value="0.26875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/row_model.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/row_notification.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/row_product_seller.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/row_quick_search.xml" value="0.290625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/layout/style_spinner.xml" value="0.26875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/add_note_menu.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/detail_page_menu.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/edit_item_menu.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/menu.xml" value="0.23055555555555557" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/new_item_menu.xml" value="0.20625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/MILC/app/src/main/res/menu/products_page_menu.xml" value="0.20625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

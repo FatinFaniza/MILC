@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417782742534",
+    "project_id": "milc-fdcba",
+    "storage_bucket": "milc-fdcba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417782742534:android:50e61cdd0d2b6bdba34d87",
+        "android_client_info": {
+          "package_name": "com.example.milc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417782742534-h6k7gffd18mul47rbr71s0ndt1999l0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6zi4fWkx8XhWL1jCO8knoYsCn7Wc7md4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417782742534-h6k7gffd18mul47rbr71s0ndt1999l0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

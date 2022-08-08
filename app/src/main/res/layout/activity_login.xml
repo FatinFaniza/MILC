@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="130dp"
+        android:textColor="#186FB5"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"/>
+
+    <TextView
+        android:id="@+id/text1_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Enter your login details to access your account"
+        android:textColor="#3F6A66"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Email"
+            android:textColor="#186FB5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+
+            android:background="@drawable/edittext_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="5dp"
+            android:screenReaderFocusable="true"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Password"
+            android:textColor="#186FB5"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Password"
+            android:inputType="textPersonName|textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="5dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+        </EditText>
+
+        <TextView
+            android:id="@+id/forgotTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#186FB5"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:text="Login"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textColor="#186FB5"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/signup_dietitian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register As Dietitian"
+        android:textColor="#40515E"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/signup_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register As Supplier"
+        android:textColor="#40515E"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/signup_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register As Product User"
+        android:textColor="#40515E"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+</LinearLayout>

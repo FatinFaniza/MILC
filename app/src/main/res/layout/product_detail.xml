@@ -1,0 +1,3011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/listview"></ImageView>
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:text="View"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/view"
+            android:scaleType="fitCenter"
+            android:text="View product details"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"></TextView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mid"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/add_photo"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        android:layout_below="@+id/image"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--                <LinearLayout-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/nameDetailTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:maxLines="1"-->
+                <!--                        android:textStyle="bold"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:text="Teacher Name" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/descriptionDetailTextView"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:textColor="#0f0f0f"-->
+                <!--                        android:minLines="4"-->
+                <!--                        android:text="Teacher Description Here........." />-->
+
+                <!--                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Product Name:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/nameDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Company/Distributor:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/companyDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Product Description:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/descriptionDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Indications:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/indicationDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Ingredients:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/ingredientDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Product Availability (Online and Offline):"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/availabilityDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Retail price:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/retailPriceDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/SpecialFeaturesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Special Features:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/SpecialFeaturesDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/StorageTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Storage:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/StorageDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/line10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/CalorieTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Serving size and approximate calorie equivalent:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/CalorieDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/OtherInformationTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Other information:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/OtherInformationDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line11"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ServingTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Serving size (carboloading):"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/ServingDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/PackSizeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Pack Size:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="15sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/PackSizeDetailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mid"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"></TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="Nutritional Information"></TextView>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <TableRow android:background="@color/teal_200">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Nutritional information"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Amount"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+                        //Energy
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/EnergyTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Energy"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Energy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Protein
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ProteinTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Protein"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Protein"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Fat
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/FatTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Fat"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Fat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //MUFA
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/MUFATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="MUFA"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/MUFA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //PUFA
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PUFATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="PUFA"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/PUFA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Linoleic Acid (Omega 6)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LinoleicTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Linoleic Acid (Omega 6)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Linoleic"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //α- linolenic Acid (Omega 3)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LinoAcidTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="α- linolenic Acid (Omega 3)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/LinoAcid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //EPA
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/EPATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="EPA"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/EPA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //DHA
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/DHATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="DHA"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/DHA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //SFA
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SFATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="SFA"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/SFA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //MCT Oil
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/MCToilTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="MCT oil"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/MCToil"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Trans fatty Acids
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/TransTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Trans fatty Acids "
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Trans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Cholesterol
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CholesterolTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Cholesterol"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Cholesterol"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Carbohydrate
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CarbohydrateTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Carbohydrate"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Carbohydrate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Salt (Na(g) x 2.5)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SaltTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Salt (Na(g) x 2.5)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Salt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Lactose
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LactoseTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Lactose"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Lactose"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Polyols
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PolyolsTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Polyols"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Polyols"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Fiber
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/FiberTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Fiber"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Fiber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //FOS
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/FOSTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="FOS"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/FOS"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Dietary Fiber
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/DietaryFiberTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Dietary Fiber"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/DietaryFiber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Soluble Fiber
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SolubleFiberTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Soluble Fiber"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/SolubleFiber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Sugar
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SugarTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Sugar"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Sugar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Essential Amino Acids
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/EssentialAminoAcidsTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Essential Amino Acids"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/EssentialAminoAcids"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Branched- Chain Amino Acids
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/BranchedChainAminoAcidsTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Branched- Chain Amino Acids"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/BranchedChainAminoAcids"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Inulin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/InulinTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Inulin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Inulin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Choline
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CholineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Choline"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Choline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Taurine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/TaurineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Taurine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Taurine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Carnitine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CarnitineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Carnitine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Carnitine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //L-Carnitine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LCarnitineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="L-Carnitine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/LCarnitine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //CaHMB
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CaHMBTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="CaHMB"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/CaHMB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //HMB
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/HMBTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="HMB"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/HMB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Inositol
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/InositolTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Inositol"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Inositol"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin A
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminATitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin A"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                            <TextView
+                                android:id="@+id/VitaminA"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Vitamin A (Palmitate)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminA1Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin A (Palmitate)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                            <TextView
+                                android:id="@+id/VitaminA1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Vitamin A (B-carotene)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminA2Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin A (B-carotene)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminA2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Vitamin D
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminDTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin D"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin D3
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminD3Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin D3"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminD3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin E
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminETitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin E"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminE"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin K
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminKTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin K"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminK"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin K1
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminK1Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin K1"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminK1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin C
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminCTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin C"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/VitaminC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin B1
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminB1Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin B1"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminB1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin B2
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminB2Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin B2"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminB2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin B6
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminB6Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin B6"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/VitaminB6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Vitamin B12
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/VitaminB12Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Vitamin B12"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/VitaminB12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Niacin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/NiacinTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Niacin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Niacin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Niacin Equivalent
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/NiacinEquivalentTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Niacin Equivalent"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/NiacinEquivalent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Folic Acid
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/FolicAcidTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Folic Acid"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/FolicAcid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Biotin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/BiotinTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Biotin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Biotin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Pantothenic Acid
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PantothenicAcidTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Pantothenic Acid"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/PantothenicAcid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //α-Lactalbumin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/αLactalbuminTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="α-Lactalbumin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/αLactalbumin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //β-Lactoglobulin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/βLactoglobulinTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="β-Lactoglobulin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/βLactoglobulin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Glycomacropeptide
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/GlycomacropeptideTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Glycomacropeptide"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Glycomacropeptide"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Immunoglobulin G (IgG)
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ImmunoglobulinGIgGTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Immunoglobulin G (IgG)"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/ImmunoglobulinGIgG"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Bovine serum albumin
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/BovineSerumAlbuminTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Bovine serum albumin"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/BovineSerumAlbumin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Protease peptone 5
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ProteasePeptone5Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Protease peptone 5"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/ProteasePeptone5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Sodium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SodiumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Sodium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Sodium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Potassium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PotassiumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Potassium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Potassium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Chloride
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ChlorideTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Chloride"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Chloride"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Calcium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CalciumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Calcium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Calcium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Phosphorus
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PhosphorusTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Phosphorus"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Phosphorus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Magnesium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/MagnesiumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Magnesium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/Magnesium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Iron
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/IronTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Iron"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Iron"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Zinc
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ZincTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Zinc"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Zinc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Manganese
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ManganeseTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Manganese"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Manganese"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Copper
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CopperTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Copper"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/Copper"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Iodine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/IodineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Iodine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Iodine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Selenium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SeleniumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Selenium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Selenium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Chromium
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ChromiumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Chromium"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Chromium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Molybdenum
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/MolybdenumTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Molybdenum"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Molybdenum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Water
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/WaterTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Water"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Water"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+                        </TableRow>
+
+                        //Isoleucine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/IsoleucineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Isoleucine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Isoleucine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Leucine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LeucineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Leucine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Leucine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Lysine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/LysineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Lysine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Lysine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Methionine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/MethionineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Methionine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Methionine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Phenylalanine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/PhenylalanineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Phenylalanine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Phenylalanine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Threonine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ThreonineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Threonine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Threonine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Tryptophan
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/TryptophanTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Tryptophan"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Tryptophan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Valine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ValineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Valine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Valine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Histidine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/HistidineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Histidine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Histidine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Alanine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/AlanineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Alanine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Alanine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Arginine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ArginineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Arginine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Arginine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Aspartic Acid
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/AsparticAcidTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Aspartic acid"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/AsparticAcid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Cysteine/ Cystine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/CysteineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Cysteine/ Cystine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Cysteine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Glutamic Acid
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/GlutamicAcidTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Glutamic acid"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/GlutamicAcid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Glycine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/GlycineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Glycine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                            <TextView
+                                android:id="@+id/Glycine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Proline
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/ProlineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Proline"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Proline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Serine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/SerineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Serine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Serine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Tyrosine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/TyrosineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Tyrosine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/Tyrosine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Hydroxy-Lysine
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/HydroxyLysineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Hydroxy-Lysine"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/HydroxyLysine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                        //Hydroxy-Proline
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/HydroxyProlineTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/teal_200"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:text="Hydroxy-Proline"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/HydroxyProline"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="center_horizontal"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="10sp"></TextView>
+
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

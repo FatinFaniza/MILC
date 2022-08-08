@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1A297C"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/topheader"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00B2E1D0"
+                    android:src="@drawable/logout_black"></ImageButton>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnLogout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-107dp"
+                    android:fontFamily="sans-serif-light"
+                    android:includeFontPadding="true"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/positionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:includeFontPadding="true"
+                    android:text="positionName"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/hospitalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/positionName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:includeFontPadding="true"
+                    android:text="hospitalName"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/search"
+                        android:layout_width="290dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/search_black"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Search"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="10sp"
+                            android:text="Search single nutrient in a product"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/view"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/listview"
+                            tools:ignore="VectorDrawableCompat" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="View detail information in a product"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/compare"
+                        android:layout_width="250dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/compare_black"
+                            tools:ignore="VectorDrawableCompat" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Compare"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Compare nutrients between product"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/analyse"
+                        android:layout_width="250dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/analyse_black"
+                            tools:ignore="VectorDrawableCompat" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Analyze"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="View nutrient analysis and product usage"
+                            android:textAlignment="center"
+                            android:textSize="10sp"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:padding="20dp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Spiritual Teachers List"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--                    android:textColor="@color/black" />-->
+            <!--                <ProgressBar-->
+            <!--                    android:id="@+id/myDataLoaderProgressBar"-->
+            <!--                    style="?android:attr/progressBarStyleHorizontal"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:indeterminate="true"-->
+            <!--                    android:indeterminateBehavior="cycle"-->
+            <!--                    android:visibility="gone" />-->
+            <!--                <androidx.recyclerview.widget.RecyclerView-->
+            <!--                    android:id="@+id/mRecyclerView"-->
+            <!--                    android:layout_weight="0.5"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                </androidx.recyclerview.widget.RecyclerView>-->
+            <!--            </LinearLayout>-->
+            <!--            -->
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/productRl"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/searchProductEt"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="20dp"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:layout_marginEnd="80dp"-->
+            <!--                    android:layout_marginBottom="20dp"-->
+            <!--                    android:background="@color/teal_700"-->
+            <!--                    android:drawableStart="@drawable/search_white"-->
+            <!--                    android:drawablePadding="10dp"-->
+            <!--                    android:hint="Search"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:textColorHint="@color/white"></EditText>-->
+
+            <!--                <ImageButton-->
+            <!--                    android:id="@+id/filterProductBtn"-->
+            <!--                    android:layout_width="45dp"-->
+            <!--                    android:layout_height="45dp"-->
+            <!--                    android:layout_alignParentEnd="true"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:layout_marginEnd="20dp"-->
+            <!--                    android:background="@null"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/filter">-->
+            <!--                </ImageButton>-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/filteredProductsTv"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_below="@id/searchProductEt"-->
+            <!--                    android:layout_marginStart="20dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginEnd="10dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:text="Showing All"-->
+            <!--                    android:textColor="@color/black"></TextView>-->
+
+            <!--                <androidx.recyclerview.widget.RecyclerView-->
+            <!--                    android:id="@+id/productsRv"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_below="@+id/filteredProductsTv"-->
+            <!--                    android:layout_marginStart="20dp"-->
+            <!--                    android:layout_marginTop="20dp"-->
+            <!--                    android:layout_marginEnd="20dp"-->
+            <!--                    android:layout_marginBottom="20dp"-->
+            <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+            <!--                    tools:listitem="@layout/row_product_seller"></androidx.recyclerview.widget.RecyclerView>-->
+
+            <!--            </RelativeLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

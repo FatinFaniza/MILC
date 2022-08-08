@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Product :">
+            </TextView>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/layout_border"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginTop="10dp">
+            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Search :"
+                android:layout_marginTop="10dp">
+            </TextView>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:padding="10dp"
+                android:background="@drawable/layout_border"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginTop="10dp">
+            </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+            <Button
+                android:id="@+id/btn_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient"
+                android:text="View result"></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Amount :"
+                    android:layout_marginTop="30dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/amountView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Result :"
+                    android:layout_marginTop="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/resultView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                tools:listitem="@layout/row_quick_search">-->
+<!--            </androidx.recyclerview.widget.RecyclerView>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
+
+
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/email"-->
+<!--android:hint="your email"-->
+<!--android:inputType="text"-->
+<!--android:textColor="@color/black"-->
+<!--android:textColorHint="@color/purple_200"-->
+<!--android:paddingLeft="30dp"-->
+<!--app:met_singleLineEllipsis="true"-->
+<!--android:layout_marginBottom="30dp">-->
+<!--</com.rengwuxian.materialedittext.MaterialEditText>-->
+
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/name"-->
+<!--android:hint="your name"-->
+<!--android:inputType="text"-->
+<!--android:textColor="@color/black"-->
+<!--android:textColorHint="@color/purple_200"-->
+<!--android:paddingLeft="30dp"-->
+<!--app:met_singleLineEllipsis="true"-->
+<!--android:layout_marginBottom="30dp">-->
+<!--</com.rengwuxian.materialedittext.MaterialEditText>-->
+
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/feedback"-->
+<!--android:hint="your feedback"-->
+<!--android:inputType="text"-->
+<!--android:textColor="@color/black"-->
+<!--android:textColorHint="@color/purple_200"-->
+<!--android:paddingLeft="30dp"-->
+<!--app:met_singleLineEllipsis="true">-->
+<!--</com.rengwuxian.materialedittext.MaterialEditText>-->

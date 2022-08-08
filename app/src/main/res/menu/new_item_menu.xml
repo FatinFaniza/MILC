@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CRUDactivity">
+
+    <item android:id="@+id/insertMenuItem"
+        android:title="SAVE"
+        android:icon="@drawable/home"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/viewAllMenuItem"
+        android:title="VIEW ALL"
+        android:icon="@drawable/home"
+        app:showAsAction="never" />
+
+</menu>
+
+    <!--save icon add-->
+    <!--view icon list-->

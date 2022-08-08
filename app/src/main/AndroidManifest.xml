@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.milc"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MILC">
+        <activity
+            android:name=".NoteView3"
+            android:exported="true" />
+        <activity
+            android:name=".NoteView"
+            android:exported="true" />
+        <activity
+            android:name=".NoteView2"
+            android:exported="true" />
+        <activity
+            android:name=".NoteEditor3"
+            android:exported="true" />
+        <activity
+            android:name=".NoteEditor2"
+            android:exported="true" />
+        <activity
+            android:name=".NoteEditor"
+            android:exported="true" />
+        <activity
+            android:name=".NoteFragment3"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".NoteFragment2"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".AddProductNutrientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileFragment3"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ProfileFragment2"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".User_ViewProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Company_ViewProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_ViewProductDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_ViewProduct"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Compare"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Analyse"
+            android:exported="true" />
+        <activity
+            android:name=".ProductEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Prosure"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Resource"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Diabetasol"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Glucerna"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Calco"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Peptamen"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_NeproHP"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_EnsureGold"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Gucil"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Protegen"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Ceprolac"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_MCToil"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Techno"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Carborie"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Paediatric"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Modular"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_AdultFormula"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_View"
+            android:exported="true" />
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileEditDietitianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterSupplierActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterDietitianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Supplier_Home"
+            android:exported="true" />
+        <activity
+            android:name=".User_Home"
+            android:exported="true" />
+        <activity
+            android:name=".Dietitian_Home"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
